@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V6</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/util.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/Angular.js"> -->
+<script src="css/Angular.js"></script>
+</head>
+<body >
+
+
+	<div ng-app="mainApp" class="container-contact100"  ng-controller="calSalary">
+	
+			<form class="contact100-form validate-form"  name="myForm">
+				
+				<span class="contact100-form-title">
+					Salary Calculator
+				</span>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Basic</span>
+					<input class="input100" ng-model="basicSal" type="text" name="name" placeholder="Salary">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">House</span>
+					<input class="input100" type="text" name="email" ng-model="houseAll" placeholder="houseAll">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Tax</span>
+					<input class="input100" type="text" name="email" ng-model="tax" placeholder="tax">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Medical</span>
+					<input class="input100" type="text" name="email" ng-model="medicalAll" placeholder="Medicalall">
+					<span class="focus-input100"></span>
+				</div>
+                 <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">transport</span>
+					<input class="input100" type="text" name="email" ng-model="transport" placeholder="transport">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn" ng-click="cal()">
+						<span style="margin-top: 4px;">
+							Submit
+						</span>
+					</button>
+				</div>
+				<p style="float: right;">Gross Salary = {{gSalary}}</p>
+			</form>
+
+			
+		</div>
+
+
+</body>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script> -->
+<script type="text/javascript" src="js/controller.js"></script>
+
+
+</html>
